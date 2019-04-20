@@ -1,12 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+    <include
+        android:id="@+id/header_layout"
+        layout="@layout/header_layout" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
 
-    <include layout="@layout/header_layout"
-        android:id="@+id/header_layout"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email">
 
-</android.support.constraint.ConstraintLayout>
+            <EditText
+                android:id="@+id/login_email_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_email_layout"
+            android:layout_marginTop="20dp"
+            android:hint="@string/hint_password">
+
+            <EditText
+                android:id="@+id/login_password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_password_layout"
+            android:text="Log In"
+            android:background="@color/blue_dark"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+        <Button
+            android:id="@+id/login_register_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_button"
+            android:text="Register"
+            android:background="@color/blue_dark"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
