@@ -6,6 +6,11 @@
     <string name="hint_password">Password</string>
     <string name="hint_confirm_password">Confirm Password</string>
     <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_phone_number_optional">Phone Number(Optional)</string>
+    <string name="hint_hospice">Hospice</string>
+    <string name="hint_comments"># comments</string>
 
-
+    <string name="driver_lookup_nurse_subheader">Type in one of the following to find the nurse</string>
+    <string name="contact_us_first_address">225 Sam Mateo NE\nAlbuquerque, New Maxico\n87108\nPhone: 505-764-9620\nFax: 505-764-9620</string>
+    <string name="contact_us_second_address">820 Main St. NE\nLos Lunas, New Maxico\n87031\nPhone: 1-505-565-1900\nFax: 1-505-565-1900</string>
 </resources>

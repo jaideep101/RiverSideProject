@@ -1,5 +1,6 @@
 package com.android.riversideproject.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
@@ -28,12 +29,12 @@ public class DriverDashboardActivity extends AppCompatActivity {
     private void initDashboardScreen(){
         headerTextView = findViewById(R.id.header_title);
         headerTextView.setText("Driver Dashboard");
-
         driverDashboardChatImageView = findViewById(R.id.driver_dashboard_chat_imageview);
         driverDashboardChatImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent driverDashboardIntent = new Intent(DriverDashboardActivity.this, DriverChatActivity.class);
+                startActivity(driverDashboardIntent);
             }
         });
 
@@ -41,7 +42,8 @@ public class DriverDashboardActivity extends AppCompatActivity {
         driverDashboardLookupImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent driverDashboardIntent = new Intent(DriverDashboardActivity.this, DriverNurseLookupActivity.class);
+                startActivity(driverDashboardIntent);
             }
         });
 
@@ -49,7 +51,8 @@ public class DriverDashboardActivity extends AppCompatActivity {
         driverDashboardPendingPickupImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent driverDashboardIntent = new Intent(DriverDashboardActivity.this, DriverPendingPickupActivity.class);
+                startActivity(driverDashboardIntent);
             }
         });
 
@@ -57,7 +60,8 @@ public class DriverDashboardActivity extends AppCompatActivity {
         driverDashboardCompletePickupImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent driverDashboardIntent = new Intent(DriverDashboardActivity.this, DriverCompletePickupActivity.class);
+                startActivity(driverDashboardIntent);
             }
         });
 
@@ -65,7 +69,8 @@ public class DriverDashboardActivity extends AppCompatActivity {
         driverDashboardContactUsImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent driverDashboardIntent = new Intent(DriverDashboardActivity.this, DriverContactUsActivity.class);
+                startActivity(driverDashboardIntent);
             }
         });
     }
