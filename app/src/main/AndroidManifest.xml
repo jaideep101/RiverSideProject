@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.DriverDashboardActivity">
+        <activity android:name=".activities.DashboardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -67,6 +67,14 @@
         </activity>
 
         <activity android:name=".activities.DriverContactUsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.nurse.NurseAccountInfoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

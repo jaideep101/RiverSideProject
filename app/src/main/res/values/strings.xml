@@ -2,7 +2,10 @@
     <string name="app_name">RiverSideProject</string>
 
     <string name="hint_name">Name</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
     <string name="hint_email">Email</string>
+    <string name="hint_confirm_email">Confirm Email</string>
     <string name="hint_password">Password</string>
     <string name="hint_confirm_password">Confirm Password</string>
     <string name="hint_phone_number">Phone Number</string>

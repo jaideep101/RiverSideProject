@@ -33,12 +33,8 @@ import java.text.SimpleDateFormat;
 public class Utils {
 
     public static String RESPONSE = Utils.DEFAULT;
-    public static String AMIT_BHADANA = "UC_vcKmg67vjMP7ciLnSxSHQ";
-    public static String ASHISH_CHANCHALANI = "UC7eHZXheF8nVOfwB2PEslMw";
-    public static String BOLLYWOOD_SONGS = "UC54cGGeCBYr-wxELJ9pHAJA";
-    public static String BB_KI_VINES = "UCqwUrj10mAEsqezcItqvwEw";
 
-    public final static String YOUTUBE_CHANNEL_ID = AMIT_BHADANA;
+    public static boolean isDriverApp = false;
 
     public final static String SPACE = " ";
     public final static String DEFAULT = "";

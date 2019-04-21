@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+    <include
+        android:id="@+id/header_layout"
+        layout="@layout/header_layout" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/nurse_dashboard_account_info_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_account_information"/>
+
+        <ImageView
+            android:id="@+id/nurse_dashboard_patient_setup_imageview"
+            android:layout_below="@id/nurse_dashboard_account_info_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_patient_setup"/>
+
+        <ImageView
+            android:id="@+id/nurse_dashboard_patient_list_imageview"
+            android:layout_below="@id/nurse_dashboard_patient_setup_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_patients_list"/>
+
+        <ImageView
+            android:id="@+id/nurse_dashboard_schedule_removal_imageview"
+            android:layout_below="@id/nurse_dashboard_patient_list_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_schedule_removal"/>
+
+        <ImageView
+            android:id="@+id/nurse_dashboard_locate_removal_imageview"
+            android:layout_below="@id/nurse_dashboard_schedule_removal_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_locate_removal_vehicle"/>
+
+        <ImageView
+            android:id="@+id/nurse_dashboard_chat_imageview"
+            android:layout_below="@id/nurse_dashboard_locate_removal_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_chat"/>
+
+        <ImageView
+            android:id="@+id/nurse_dashboard_contact_us_imageview"
+            android:layout_below="@id/nurse_dashboard_chat_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_contact_us"/>
+    </RelativeLayout>
+
+</LinearLayout>
