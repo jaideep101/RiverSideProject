@@ -9,6 +9,10 @@ import android.widget.TextView;
 
 import com.android.riversideproject.R;
 import com.android.riversideproject.activities.nurse.NurseAccountInfoActivity;
+import com.android.riversideproject.activities.nurse.NurseLocateRemovalVehicle;
+import com.android.riversideproject.activities.nurse.NursePatientListActivity;
+import com.android.riversideproject.activities.nurse.NursePatientSetupActivity;
+import com.android.riversideproject.activities.nurse.NurseScheduleRemovalActivity;
 import com.android.riversideproject.adapter.DriverChatAdapter;
 import com.android.riversideproject.utilities.Utils;
 
@@ -107,7 +111,7 @@ public class DashboardActivity extends AppCompatActivity {
         nurseAccountPatientSetupImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent driverDashboardIntent = new Intent(DashboardActivity.this, DriverChatActivity.class);
+                Intent driverDashboardIntent = new Intent(DashboardActivity.this, NursePatientSetupActivity.class);
                 startActivity(driverDashboardIntent);
             }
         });
@@ -116,7 +120,7 @@ public class DashboardActivity extends AppCompatActivity {
         nurseAccountPatientListImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent driverDashboardIntent = new Intent(DashboardActivity.this, DriverChatActivity.class);
+                Intent driverDashboardIntent = new Intent(DashboardActivity.this, NursePatientListActivity.class);
                 startActivity(driverDashboardIntent);
             }
         });
@@ -125,7 +129,7 @@ public class DashboardActivity extends AppCompatActivity {
         nurseScheduleRemovalImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent driverDashboardIntent = new Intent(DashboardActivity.this, DriverNurseLookupActivity.class);
+                Intent driverDashboardIntent = new Intent(DashboardActivity.this, NurseScheduleRemovalActivity.class);
                 startActivity(driverDashboardIntent);
             }
         });
@@ -134,7 +138,7 @@ public class DashboardActivity extends AppCompatActivity {
         nurseLocateRemovalVehicleImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent driverDashboardIntent = new Intent(DashboardActivity.this, DriverPendingPickupActivity.class);
+                Intent driverDashboardIntent = new Intent(DashboardActivity.this, NurseLocateRemovalVehicle.class);
                 startActivity(driverDashboardIntent);
             }
         });

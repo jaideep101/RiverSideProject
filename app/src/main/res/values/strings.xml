@@ -12,8 +12,30 @@
     <string name="hint_phone_number_optional">Phone Number(Optional)</string>
     <string name="hint_hospice">Hospice</string>
     <string name="hint_comments"># comments</string>
+    <string name="hint_patient_name">Patient Name</string>
+    <string name="hint_attending_physician">Attending Physician</string>
+    <string name="hint_patient_address">Patient Address</string>
+    <string name="hint_address2">Address2</string>
+    <string name="hint_city">City</string>
+    <string name="hint_zipcode">Zip Code</string>
+    <string name="hint_location_deceased">Location of Deceased</string>
+    <string name="hint_time_death">Time of Death</string>
 
     <string name="driver_lookup_nurse_subheader">Type in one of the following to find the nurse</string>
     <string name="contact_us_first_address">225 Sam Mateo NE\nAlbuquerque, New Maxico\n87108\nPhone: 505-764-9620\nFax: 505-764-9620</string>
     <string name="contact_us_second_address">820 Main St. NE\nLos Lunas, New Maxico\n87031\nPhone: 1-505-565-1900\nFax: 1-505-565-1900</string>
+
+    <string-array name="city_arrays">
+        <item>New Maxico</item>
+        <item>New Jersey</item>
+        <item>Las Lunas</item>
+        <item>Las Vegas</item>
+    </string-array>
+
+    <string-array name="patient_name_arrays">
+        <item>Patient Name 1</item>
+        <item>Patient Name 2</item>
+        <item>Patient Name 3</item>
+        <item>Patient Name 4</item>
+    </string-array>
 </resources>

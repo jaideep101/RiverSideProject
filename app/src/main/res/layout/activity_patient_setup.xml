@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+    <include
+        android:id="@+id/header_layout"
+        layout="@layout/header_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_layout"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/patient_setup_patient_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_patient_name">
+
+            <EditText
+                android:id="@+id/patient_setup_patient_name_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/patient_setup_attending_physician_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/patient_setup_patient_name_layout"
+            android:layout_marginTop="10dp"
+            android:hint="@string/hint_attending_physician">
+
+            <EditText
+                android:id="@+id/patient_setup_attending_physician_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/patient_setup_phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/patient_setup_attending_physician_layout"
+            android:layout_marginTop="10dp"
+            android:hint="@string/hint_phone_number">
+
+            <EditText
+                android:id="@+id/patient_setup_phone_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/patient_setup_address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/patient_setup_phone_layout"
+            android:layout_marginTop="10dp"
+            android:hint="@string/hint_patient_address">
+
+            <EditText
+                android:id="@+id/patient_setup_address_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/patient_setup_address_two_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/patient_setup_address_layout"
+            android:layout_marginTop="10dp"
+            android:hint="@string/hint_address2">
+
+            <EditText
+                android:id="@+id/patient_setup_address_two_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/patient_setup_city_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/patient_setup_address_two_layout"
+            android:layout_marginTop="10dp"
+            android:hint="@string/hint_city">
+
+            <EditText
+                android:id="@+id/patient_setup_city_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/patient_setup_drop_down_layout"
+            android:layout_below="@+id/patient_setup_city_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Spinner
+                android:id="@+id/patient_setup_city_array"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:entries="@array/city_arrays"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/patient_setup_zipcode"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/patient_setup_city_layout"
+                android:layout_marginTop="10dp"
+                android:hint="@string/hint_zipcode">
+
+                <EditText
+                    android:id="@+id/patient_setup_zipcode_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_light">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/blue_dark"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/blue_dark"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
