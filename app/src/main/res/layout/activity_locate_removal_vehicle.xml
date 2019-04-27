@@ -13,12 +13,23 @@
         android:layout_height="wrap_content"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:focusableInTouchMode="true">
+        <TextView
+            android:id="@+id/above_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:text="Click on chat icon after tapping on location marker to start chat with driver."/>
 
         <fragment xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
+            android:layout_below="@id/above_textview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
             android:id="@+id/locate_map"
             tools:context=".activities.nurse.NurseLocateRemovalVehicle"
             android:name="com.google.android.gms.maps.SupportMapFragment" />
