@@ -7,6 +7,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.ViewCompat;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.view.animation.OvershootInterpolator;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -59,6 +61,8 @@ public class Utils {
     public static final String DIMENSION_HEIGHT = "dimension_height";
 
     public static int admobDisplayCount = 0;
+
+    public static Snackbar snackbar = null;
 
     /*********************************************************************
      * @param testString
@@ -309,5 +313,32 @@ public class Utils {
             ex.printStackTrace();
         }
         return versionName;
+    }
+
+    public static int getDeviceHeight(Context mContext) {
+        DisplayMetrics displaymetrics = new DisplayMetrics();
+        ((Activity) mContext).getWindowManager().getDefaultDisplay()
+                .getMetrics(displaymetrics);
+        return displaymetrics.heightPixels;
+    }
+
+    public static int getDeviceWidth(Context mContext) {
+        DisplayMetrics displaymetrics = new DisplayMetrics();
+        ((Activity) mContext).getWindowManager().getDefaultDisplay()
+                .getMetrics(displaymetrics);
+        return displaymetrics.widthPixels;
+    }
+
+    public static void showSnackbar(View layout, String message){
+        snackbar = Snackbar
+                .make(layout, message, Snackbar.LENGTH_LONG)
+                .setAction("OK", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        snackbar.dismiss();
+                    }
+                });
+
+        snackbar.show();
     }
 }
